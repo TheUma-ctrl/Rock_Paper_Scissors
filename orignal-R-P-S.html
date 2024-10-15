@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIGNAL-rockpaper</title>
+    <link rel="stylesheet" href="orignal-R-P-S.css">
+</head>
+
+
+<body>
+    <p class="first-p">rock paper Scissors</p>
+    <button class="move-img" onclick="
+    pickComputerMove();
+    playGame('rock');
+    "> <img class="rock-img" src="https://th.bing.com/th/id/R.85fde7ef8fd6ecc4279c8a0db42fbf4a?rik=runno6Ok%2b4DZmQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fgoogle%2fnoto-emoji-people-bodyparts%2f1024%2f12020-raised-fist-icon.png&ehk=oz8VSx9HY20SSmufpu%2bgs3vsvWpnq%2b27ZasRsjat%2fIA%3d&risl=&pid=ImgRaw&r=0" alt="">
+    </button>
+
+    <button class="move-img" onclick="
+    pickComputerMove();
+    playGame('paper');
+    "><img class="paper-img" src="https://hotemoji.com/images/emoji/n/5zg52zzh675n.png" alt="">
+    </button>
+
+    <button class="move-img" onclick="
+    pickComputerMove();
+    playGame('Scissors');
+    "><img class="siz-img" src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/1024px/270c.png" alt="">
+    </button>  
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <button class="reset-but" onclick="
+      score.wins=0;
+      score.losses=0;
+      score.ties=0;
+      updateScoreElement();
+    ">Reset Score</button>
+    
+
+    <script src="orignal-R-P-S.js"></script>
+</body>
+
+</html>
